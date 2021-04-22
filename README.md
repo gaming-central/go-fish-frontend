@@ -1,9 +1,9 @@
-[Check it out live](https://parcel-react-tailwind-template.now.sh)
+[Check it out live](https://go-fish-frontend.now.sh)
 
 Spin it up locally:
 
 ```sh
-git clone $url && cd parcel-react-tailwind-template
+git clone $url && cd go-fish-frontend
 npm i
 npm start
 ```
