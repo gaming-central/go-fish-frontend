@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "main": "index.html",
   "scripts": {
-    "start": "MODE=development parcel serve src/index.html",
-    "build": "MODE=production parcel build src/index.html --no-scope-hoist"
+    "start": "cross-env MODE=development parcel serve src/index.html",
+    "build": "cross-env MODE=production parcel build src/index.html --no-scope-hoist"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-router-dom": "latest",
+    "cross-env": "^7.0.3",
     "parcel": "next",
     "tailwindcss": "latest"
   },
