@@ -2,6 +2,59 @@
 
 @tailwind components;
 
+.btn {
+  @apply p-2 rounded bg-white shadow text-purple-600;
+}
+
+.btn:hover, .btn:focus {
+  @apply bg-purple-100 shadow-md outline-none;
+}
+
+.btn[disabled] {
+  @apply bg-gray-200 text-gray-500 shadow-none cursor-not-allowed;
+}
+
+.card {
+  perspective: 800px;
+}
+
+.card-flip-container {
+  @apply w-full h-full relative transform duration-500 transition-all;
+  transform-style: preserve-3d;
+}
+
+.flipped .card-flip-container {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  @apply border-4 border-purple-500 rounded-lg;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  @apply bg-gradient-to-tr from-pink-600 to-purple-700;
+}
+
+.card-lift {
+  @apply transform transition-all duration-300 translate-y-0;
+}
+
+.card-lift:hover {
+  @apply -translate-y-20;
+}
+
+@responsive {
+  .card-overlap-x {
+    margin-left: calc(((100vw - (13 * 14rem)) / 12) - 2px);
+  }
+
+  .card-overlap-y {
+    margin-top: -5rem;
+  }
+}
+
 @tailwind utilities;
 
 @responsive {

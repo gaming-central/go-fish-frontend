@@ -12,6 +12,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      rotate: {
+        '-7': '-7deg',
+        '-5': '-5deg',
+        '-4': '-4deg',
+        '4': '4deg',
+        '5': '5deg',
+        '7': '7deg'
+      },
       colors: {
         primary: colors.blue,
         secondary: {
