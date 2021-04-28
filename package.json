@@ -27,6 +27,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-router-dom": "latest",
+    "autoprefixer": "^10.2.5",
     "cross-env": "^7.0.3",
     "parcel": "next",
     "tailwindcss": "latest"
